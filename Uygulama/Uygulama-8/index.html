@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        .box {
+            width: 120px;
+            height: 120px;
+        }
+
+        .mbox {
+            width: 30px;
+            height: 30px;
+            background-color: yellow;
+            position: absolute;
+            top: 50px;
+            left: 30px;
+        }
+
+        #first {
+            background-color: red;
+            width: 100%;
+
+            position: sticky;
+            top: 50px;
+        }
+
+        #second {
+            background-color: blue;
+            position: relative;
+        }
+
+        #third {
+            background-color: green;
+            position: fixed;
+            bottom: 0;
+            right: 0;
+
+        }
+    </style>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste provident recusandae architecto praesentium totam
+        placeat consequuntur fugiat voluptas corrupti natus voluptatum magni ex eaque inventore, ea voluptate
+        exercitationem alias quis eos, cumque eveniet corporis? Incidunt omnis esse quasi rerum possimus facere eius
+        culpa, aspernatur exercitationem harum, minima labore consequatur dolores odit mollitia est magnam ut? Delectus
+        tempore, eveniet alias consectetur sed fuga tenetur architecto recusandae natus earum, et deleniti in numquam
+        facere magni ad, cum maxime id! Omnis quos ut nemo facilis explicabo accusantium ad cupiditate earum molestiae.
+        Libero.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia tempora ab quia eum nobis, nihil dolore earum
+        maiores ducimus? Voluptatum optio architecto reprehenderit nostrum provident ipsa qui minus ipsam hic numquam?
+        Officia quos placeat esse enim natus impedit consectetur veniam inventore, tempora aperiam atque. Fugiat,
+        debitis veniam! Voluptas quos quaerat voluptatem doloremque atque facilis! Sit vitae iure mollitia et amet,
+        saepe quasi dolores! Sequi, corrupti.</p>
+
+    <div class="box" id="first">box 1</div>
+    <div class="box" id="second">
+        <div class="mbox"></div>
+    </div>
+    <div class="box" id="third">box 3</div>
+    <div style="height: 2000px;"></div>
+
+</body>
+
+</html>
